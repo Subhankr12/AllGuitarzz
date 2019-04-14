@@ -16,19 +16,20 @@
       <a href="http://localhost:8877/login"><img src='images/logo.jpg' alt="LOGO"></a>
    </div>
 
+   <div id="signup">
+      <h1>Signup</h1>
+      <p>Already have account ? <a href="/login">login instead</a></p>
+      <form action="/signup" method="POST">
+         <input type="text" name="username" placeholder="Choose username">
+         <br>
+         <input type="email" name="email" placeholder="Your email id">
+         <br>
+         <input type="password" name="password" placeholder="Set a password">
+         <br>
 
-   <h1>Signup</h1>
-   <p>Already have account ? <a href="/login">login instead</a></p>
-   <form action="/signup" method="POST">
-      <input type="text" name="username" placeholder="Choose username">
-      <br>
-      <input type="email" name="email" placeholder="Your email id">
-      <br>
-      <input type="password" name="password" placeholder="Set a password">
-      <br>
-
-      <button type="submit">Sign up</button>
-   </form>
+         <button type="submit">Sign up</button>
+      </form>
+   </div>
 </body>
 
 </html>

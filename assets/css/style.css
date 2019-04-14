@@ -1,0 +1,14 @@
+#logo a img {
+   top: 10px;
+   position: relative;
+   left: 50px;
+   width: 300px;
+   height: 100px;
+}
+
+body {}
+
+#get-start a button {
+   margin: 250px 600px;
+   font-size: 50px;
+}

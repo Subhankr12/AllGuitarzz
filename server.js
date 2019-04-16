@@ -28,7 +28,7 @@ app.use(passport.session())
 app.use(express.static(`assets`));
 app.use('/login', (require('./routes/login').route))
 app.use('/signup', (require('./routes/signup').route))
-app.use('/profile', (require('./routes/profile').route))
+app.use('/home', (require('./routes/home').route))
 app.use('/get-started', (require('./routes/get-started').route))
 
 app.get('/', (req, res) => {
@@ -39,7 +39,7 @@ app.get('/login', (req, res) => {
    if (!req.user) {
       return res.redirect('/login')
    }
-   res.redirect('/profile')
+   res.redirect('/home')
 })
 
 

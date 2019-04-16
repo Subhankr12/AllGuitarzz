@@ -7,7 +7,7 @@ route.get('/', (req, res) => {
 
 route.post('/',
    passport.authenticate('local', {
-      successRedirect: '/profile',
+      successRedirect: '/home',
       failureRedirect: '/login'
    })
 )
@@ -19,7 +19,7 @@ route.get('/facebook',
 route.get(
    '/facebook/callback',
    passport.authenticate('facebook', {
-      successRedirect: '/profile',
+      successRedirect: '/home',
       failureRedirect: '/login'
    })
 )

@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+body {
+  overflow-x: hidden;
+}
+
+/* for navbar elements */
+#up-elems {
+  background-color: rgba(169, 169, 169, 0.623);
+  box-shadow: 0 5px 8px 0 rgba(19, 3, 3, 0.616);
+  transition: 0.3s;
+  height: 130px;
+}
+
+#up-elems:hover {
+  box-shadow: 0 10px 16px 0 rgba(35, 82, 114, 0.856);
+}
+
+#up-elems p {
+  position: relative;
+  top: -40px;
+  left: 1000px;
+  font-size: 20px;
+}
+
+#welcome {
+  position: relative;
+  top: -80px;
+  left: 1200px;
+  font-size: 20px;
+}
+
+/* for logo */
 #logo a img {
   top: 10px;
   position: relative;
@@ -6,10 +39,7 @@
   height: 100px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
+/* for get-started page */
 #get-start a button {
   position: relative;
   top: 450px;
@@ -22,6 +52,7 @@ body {
   transform: scale(1.1);
 }
 
+/* background for get started page */
 #bg-video {
   position: fixed;
   z-index: -1;
@@ -115,7 +146,6 @@ body {
   width: 280px;
   height: 60px;
   border-radius: 5px;
-
 }
 
 #signup button {
@@ -125,20 +155,37 @@ body {
   border-radius: 5px;
 }
 
-#up-elems {
-  background-color: rgba(169, 169, 169, 0.623);
-  box-shadow: 0 5px 8px 0 rgba(19, 3, 3, 0.616);
-  transition: 0.3s;
-  height: 130px;
-}
-
-#up-elems:hover {
-  box-shadow: 0 10px 16px 0 rgba(35, 82, 114, 0.856);
-}
-
-#up-elems p {
+/* for profile */
+#tabs div {
+  background-color: grey;
+  margin-left: 8px;
+  width: 100px;
+  height: 100px;
   position: relative;
-  top: -40px;
-  left: 1000px;
+  left: 900px;
+  top: -80px;
+  padding-top: 55px;
+  border-radius: 50px;
+  padding-left: 15px;
+  box-shadow: 0 4px 8px 0 #3b5998;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+#tabs div:hover {
+  box-shadow: 0 6px 12px 0 #3b5998;
+}
+
+#tabs div a {
+  color: black;
+  font-family: "Gochi Hand", cursive;
   font-size: 20px;
+}
+
+#home {
+  padding-left: 20px !important;
+}
+
+#about {
+  padding-left: 20px !important;
 }

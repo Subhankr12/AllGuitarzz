@@ -4,7 +4,7 @@ route.get('/', (req, res) => {
    if (!req.user) {
       return res.redirect('/login')
    }
-   res.render('profile', {
+   res.render('home', {
       user: req.user
    })
 })

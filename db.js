@@ -26,7 +26,14 @@ const Users = db.define('user', {
    }
 })
 
+const Home = db.define('home', {
+   info: {
+      type: Sequelize.TEXT
+   }
+})
+
 module.exports = {
    db,
-   Users
+   Users,
+   Home
 }

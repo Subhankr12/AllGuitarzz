@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Fira+Sans|Heebo|Overpass');
 
 body {
   overflow-x: hidden;
 }
 
+
 /* for navbar elements */
 #up-elems {
-  background-color: rgba(169, 169, 169, 0.623);
+  background-color: rgba(169, 169, 169, 1);
   box-shadow: 0 5px 8px 0 rgba(19, 3, 3, 0.616);
   transition: 0.3s;
   height: 130px;
@@ -155,21 +157,25 @@ body {
   border-radius: 5px;
 }
 
-/* for profile */
+/* for home */
+#tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  top: -90px;
+}
+
 #tabs div {
   background-color: grey;
-  margin-left: 8px;
+  border-radius: 50px;
   width: 100px;
   height: 100px;
-  position: relative;
-  left: 900px;
-  top: -80px;
-  padding-top: 55px;
-  border-radius: 50px;
-  padding-left: 15px;
   box-shadow: 0 4px 8px 0 #3b5998;
   transition: 0.3s;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 #tabs div:hover {
@@ -181,12 +187,116 @@ body {
   color: black;
   font-family: "Gochi Hand", cursive;
   font-size: 20px;
+  padding: 30px 0 0 20px;
 }
 
-#home {
-  padding-left: 20px !important;
+
+
+/* for home display */
+
+#home-content {
+  align: center;
+  color: whitesmoke;
 }
 
-#about {
-  padding-left: 20px !important;
+#home-content h1 {
+  text-align: center;
+}
+
+#home-content hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 5px;
+}
+
+.home-para {
+  margin-left: 30%;
+  transform: translate(-22%, 0);
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Overpass', sans-serif;
+}
+
+.home-para h3 {
+  color: aquamarine;
+}
+
+.home-para p b {
+  color: teal;
+}
+
+
+
+
+
+.home-bg {
+  background: url('../images/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+
+/* for guitars display */
+.guitars-bg {
+  background: url('../images/guitars-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+
+/* for chords display */
+.chords-bg {
+  background: url('../images/chords-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+
+/* for about display */
+.about-bg {
+  background: url('../images/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+
+
+/* for lessons display */
+.lessons-bg {
+  background: url('../images/lessons-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -5;
 }

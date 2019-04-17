@@ -29,6 +29,10 @@ app.use(express.static(`assets`));
 app.use('/login', (require('./routes/login').route))
 app.use('/signup', (require('./routes/signup').route))
 app.use('/home', (require('./routes/home').route))
+app.use('/guitars', (require('./routes/guitars').route))
+app.use('/lessons', (require('./routes/lessons').route))
+app.use('/chords', (require('./routes/chords').route))
+app.use('/about', (require('./routes/about').route))
 app.use('/get-started', (require('./routes/get-started').route))
 
 app.get('/', (req, res) => {

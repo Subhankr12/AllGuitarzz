@@ -7,6 +7,7 @@ const passport = require('./passport')
 const path = require("path")
 
 const app = express()
+const PORT = process.env.PORT || 8877
 
 app.set('view engine', 'hbs')
 
@@ -51,7 +52,7 @@ db.sync({
 
    })
    .then(() => {
-      app.listen(8877, () => {
+      app.listen(PORT, () => {
          console.log('Started on http://localhost:8877')
       })
    })

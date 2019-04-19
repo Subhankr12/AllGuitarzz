@@ -46,6 +46,26 @@
 
    <div class="guitars-bg"></div>
 
+   <div id="guitars-content">
+
+      {{#each guitarData}}
+
+      <h1>{{this.guitar_name}}</h1>
+      <img src="{{this.guitar_image}}" alt="PHOTO">
+      <br>
+      <br>
+      <br>
+      <p>{{this.guitar_desc}}</p>
+
+      <br>
+      <br><br>
+      <br><br>
+      <br>
+      {{/each}}
+
+
+   </div>
+
 </body>
 
 </html>

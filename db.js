@@ -26,7 +26,42 @@ const Users = db.define('user', {
    }
 })
 
+const Guitars = db.define('guitar', {
+   guitar_image: {
+      type: Sequelize.STRING(200)
+   },
+   guitar_name: {
+      type: Sequelize.STRING(50),
+      unique: false,
+      allowNull: false
+   },
+   guitar_desc: {
+      type: Sequelize.TEXT
+   }
+})
+
+const Chords = db.define('chord', {
+   chordName: {
+      type: Sequelize.STRING(20),
+      unique: false,
+      allowNull: false
+   },
+   chordSymbol: {
+      type: Sequelize.STRING(10),
+      unique: false,
+      allowNull: false
+   },
+   chordImage: {
+      type: Sequelize.STRING(200)
+   },
+   chordDescription: {
+      type: Sequelize.TEXT
+   }
+})
+
 module.exports = {
    db,
-   Users
+   Users,
+   Guitars,
+   Chords
 }

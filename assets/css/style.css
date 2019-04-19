@@ -81,7 +81,7 @@ body {
 }
 
 #login:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 
 #login h1 {
@@ -129,7 +129,7 @@ body {
 }
 
 #signup:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 
 #signup h1 {
@@ -163,23 +163,31 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
   position: relative;
-  top: -90px;
+  top: -46px;
 }
 
 #tabs div {
   background-color: grey;
-  border-radius: 50px;
+  border-radius: 0 0 90px 90px;
   width: 100px;
-  height: 100px;
+  height: 60px;
   box-shadow: 0 4px 8px 0 #3b5998;
   transition: 0.3s;
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #tabs div:hover {
   box-shadow: 0 6px 12px 0 #3b5998;
+}
+
+#home {
+  padding: 5px 0 0 10px;
+}
+
+#about {
+  padding: 5px 0 0 10px;
 }
 
 
@@ -187,7 +195,7 @@ body {
   color: black;
   font-family: "Gochi Hand", cursive;
   font-size: 20px;
-  padding: 30px 0 0 20px;
+  padding: 1px 0 0 15px;
 }
 
 
@@ -250,7 +258,7 @@ body {
 
 /* for guitars display */
 .guitars-bg {
-  background: url('../images/guitars-bg.jpg');
+  background-color: rgb(241, 229, 229);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -259,6 +267,21 @@ body {
   left: 0;
   top: 0;
   z-index: -5;
+}
+
+#guitars-content {
+  text-align: center;
+}
+
+#guitars-content img {
+  height: 300px;
+  width: 500px;
+}
+
+#guitars-content p {
+  margin-left: 30%;
+  transform: translate(-22%, 0);
+  font-size: 20px;
 }
 
 /* for chords display */
@@ -272,6 +295,21 @@ body {
   left: 0;
   top: 0;
   z-index: -5;
+}
+
+
+#search-bar {
+  text-align: center;
+}
+
+#search-bar input {
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#search-bar button {
+  font-size: 20px;
+  border-radius: 20px;
 }
 
 /* for about display */
